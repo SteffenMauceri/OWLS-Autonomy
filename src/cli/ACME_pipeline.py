@@ -173,6 +173,9 @@ if __name__ == '__main__':
     parser.add_argument('--cores',             type=int,
                                                help="How many processor cores to utilize",
                                                default=7)
+    
+    parser.add_argument('--saveheatmapdata',    action='store_true',
+                                                help="Saves the heatmap as a data file")
 
     # Running options
     parser.add_argument('--knowntraces',       action='store_true',
